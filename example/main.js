@@ -8,7 +8,7 @@ const suggestions = require('./countries')
 const App = React.createClass({
   getInitialState () {
     return {
-      tags: [ { id: 184, name: 'Thailand' }, { id: 86, name: 'India' } ],
+      tags: [ { id: 184, title: 'Thailand' }, { id: 86, title: 'India' } ],
       suggestions
     }
   },

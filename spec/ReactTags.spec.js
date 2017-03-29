@@ -344,7 +344,7 @@ describe('React Tags', () => {
 
     it('can render a custom tag component when provided', () => {
       const Tag = (props) => (
-        React.createElement('button', { className: 'custom-tag' }, props.tag.name)
+        React.createElement('button', { className: 'custom-tag' }, props.tag.title)
       )
 
       createInstance({
