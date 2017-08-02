@@ -1,6 +1,7 @@
 'use strict'
 
-var React = require('react')
+var React = require('react'),
+var PropTypes = require('prop-types')
 var Tag = require('./Tag')
 var Input = require('./Input')
 var Suggestions = require('./Suggestions')
@@ -188,22 +189,22 @@ ReactTags.defaultProps = {
 }
 
 ReactTags.propTypes = {
-  tags: React.PropTypes.array,
-  placeholder: React.PropTypes.string,
-  suggestions: React.PropTypes.array,
-  autofocus: React.PropTypes.bool,
-  autoresize: React.PropTypes.bool,
-  handleDelete: React.PropTypes.func.isRequired,
-  handleAddition: React.PropTypes.func.isRequired,
-  handleInputChange: React.PropTypes.func,
-  minQueryLength: React.PropTypes.number,
-  maxSuggestionsLength: React.PropTypes.number,
-  classNames: React.PropTypes.object,
-  allowNew: React.PropTypes.bool,
-  allowBackspace: React.PropTypes.bool,
-  tagComponent: React.PropTypes.oneOfType([
-    React.PropTypes.func,
-    React.PropTypes.element
+  tags: PropTypes.array,
+  placeholder: PropTypes.string,
+  suggestions: PropTypes.array,
+  autofocus: PropTypes.bool,
+  autoresize: PropTypes.bool,
+  handleDelete: PropTypes.func.isRequired,
+  handleAddition: PropTypes.func.isRequired,
+  handleInputChange: PropTypes.func,
+  minQueryLength: PropTypes.number,
+  maxSuggestionsLength: PropTypes.number,
+  classNames: PropTypes.object,
+  allowNew: PropTypes.bool,
+  allowBackspace: PropTypes.bool,
+  tagComponent: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.element
   ])
 }
 
